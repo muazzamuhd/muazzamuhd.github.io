@@ -1,0 +1,114 @@
+/* Basic styles for the website */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+}
+/* Update the container to position it to the right side */
+.container {
+    position: relative;
+    text-align: center;
+    padding-top: -100px;
+    color: blue;
+    z-index: 1;
+    float: right; /* Shift the container to the right */
+    margin-right: 70px; /* Adjust the right margin as needed */
+}
+
+/* Update the slideshow container to center it horizontally */
+.slideshow-container {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    max-height: 750px; /* Adjust the maximum height as needed */
+    overflow: hidden; /* Hide overflow if images are larger */
+    text-align: right;
+} /* Align the slideshow content to the left */
+}
+}
+
+/* Update the navigation arrows to adjust their position */
+.prev,
+.next {
+    /* ... (existing styles) ... */
+    left: auto;
+    right: 0; /* Position the navigation arrows to the right side */
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Background settings */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('5058193.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 100vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 8.5vw;
+  text-transform: uppercase;
+}
+/* Add borders to images and videos in the slideshow */
+.mySlides img,
+.mySlides video {
+    border: 5px solid blue; /* Adjust border properties as needed */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(2, 2, 2, 2.2); /* Optional: Add shadow effect */
+    padding: 0px; /* Optional: Add padding around the content */
+}
