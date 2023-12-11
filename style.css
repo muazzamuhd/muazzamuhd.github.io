@@ -9,36 +9,21 @@ body {
 .container {
     position: relative;
     text-align: center;
-    padding-top: -100px;
-    color: blue;
+    padding-top: 100px;
+    color: white;
     z-index: 1;
     float: right; /* Shift the container to the right */
-    margin-right: 70px; /* Adjust the right margin as needed */
+    margin-right: 20px; /* Adjust the right margin as needed */
 }
 
 /* Update the slideshow container to center it horizontally */
 .slideshow-container {
     position: relative;
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
-    max-height: 750px; /* Adjust the maximum height as needed */
-    overflow: hidden; /* Hide overflow if images are larger */
-    text-align: right;
-} /* Align the slideshow content to the left */
-}
+    text-align: left; /* Align the slideshow content to the left */
 }
 
-/* Update the navigation arrows to adjust their position */
-.prev,
-.next {
-    /* ... (existing styles) ... */
-    left: auto;
-    right: 0; /* Position the navigation arrows to the right side */
-}
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 /* Background settings */
 .background {
